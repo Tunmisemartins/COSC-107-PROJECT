@@ -1,0 +1,107 @@
+* {
+  color: white;
+}
+body {
+  background-color: #faf5e9;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+  -ms-flex-align: center;
+}
+/* Code for the container */
+.container {
+  border-radius: 10px;
+  background-color: #009b4d;
+  margin-top: 55px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 20px;
+  display: flex;
+  box-shadow: 3px 1px 2px 1px grey;
+  max-width: 100rem;
+}
+/* Code for the left hand side of container */
+.imgbox img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  /* background: rgb(82, 4, 112); */
+  border-radius: 5px;
+}
+/* Code for the right side of the container */
+.secondbox {
+  max-width: 575px;
+}
+/* Code for the text under the right hand side of the container */
+.textcontent {
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+.textcontent h4 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+.textcontent h5 {
+  font-size: 17px;
+  font-family: sans-serif;
+}
+/* Code for the design of the countdown cards */
+.cards {
+  display: flex;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+.days,
+.hours,
+.minutes,
+.seconds {
+  background: #1dcf58;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 110px;
+  width: 75px;
+  text-align: center;
+  box-shadow: 1px 2px 2px 1px grey;
+}
+.days,
+.hours,
+.minutes,
+.seconds p {
+  font-size: 17px;
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+  font-weight: bold;
+  font-size: 25px;
+}
+/* Code if giveaway has ended */
+.expired {
+  background: #1dcf58;
+  display: none;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 1px 2px 2px 1px grey;
+}
+/* Code for responsiveness */
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column !important;
+  }
+}
